@@ -1,16 +1,12 @@
 import { Routes } from '@angular/router';
+import { NotFoundComponent } from './features/public/components/not-found/not-found.component';
 
 export const routes: Routes = [
-  // 1. Rota padrão da aplicação (quando o usuário acessa http://localhost:4200/)
-  { path: '', redirectTo: 'auth/login', pathMatch: 'full' },
-
-  // 2. Rota para o módulo de autenticação (lazy loaded)
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   {
-    path: 'auth', // <--- Este é o prefixo para todas as rotas DENTRO do AuthModule
+    path: '',
     loadChildren: () =>
-      import('./features/auth/auth.module').then((m) => m.AuthModule),
+      import('./features/public/public.module').then((m) => m.PublicModule),
   },
-
-  // 3. Rota curinga para qualquer URL não mapeada (geralmente redireciona para login)
-  { path: '**', redirectTo: 'auth/login' },
+  { path: '**', component: NotFoundComponent },
 ];
