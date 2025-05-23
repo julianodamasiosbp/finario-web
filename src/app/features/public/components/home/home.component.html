@@ -1,1 +1,84 @@
-<p>home works!</p>
+<p-toolbar styleClass="p-mb-4 surface-card p-shadow-2">
+    <ng-template pTemplate="start">
+        <img src="finario-logo.svg" alt="Finario Logo">
+    </ng-template>
+    <ng-template pTemplate="end">
+        <button pButton label="Sobre" class="p-button-text p-mr-2"></button>
+        <button pButton label="Contato" class="p-button-text p-mr-2"></button>
+        <button pButton label="Entrar" routerLink="/auth/login" class="p-button-text p-mr-2"></button>
+    </ng-template>
+</p-toolbar>
+
+<div class="p-grid p-jc-center p-ai-center p-py-6 surface-ground text-center" style="min-height: 500px;">
+    <div class="p-col-12 p-md-8 p-lg-6">
+        <h1 class="p-text-bold p-text-5xl p-mb-3">Assuma o Controle da Sua Vida Financeira</h1>
+        <p class="p-text-xl p-mb-4 p-text-secondary">Finario te ajuda a gerenciar gastos, criar orçamentos e alcançar seus objetivos financeiros de forma simples e intuitiva.</p>
+        <div class="p-d-flex p-jc-center p-flex-wrap">
+            <button pButton label="Começar Agora" routerLink="/auth/register" class="p-button-lg p-button-success p-mr-2 p-mb-2"></button>
+            <button pButton label="Saiba Mais" class="p-button-lg p-button-outlined p-button-secondary p-mb-2"></button>
+        </div>
+    </div>
+</div>
+
+<div class="p-grid p-jc-center p-py-6 p-px-3">
+    <h2 class="p-col-12 p-text-center p-text-4xl p-mb-5 p-text-bold">Funcionalidades Poderosas ao Seu Alcance</h2>
+
+    <div class="p-col-12 p-md-4 p-mb-4">
+        <p-card styleClass="p-shadow-2 h-full text-center">
+            <ng-template pTemplate="header">
+                <i class="pi pi-wallet p-text-6xl p-mb-3 p-text-primary"></i>
+            </ng-template>
+            <ng-template pTemplate="title">
+                Controle de Despesas
+            </ng-template>
+            <ng-template pTemplate="subtitle">
+                Registre e categorize seus gastos.
+            </ng-template>
+            <p>
+                Nunca mais se perca em suas finanças. Categorize cada gasto e saiba para onde seu dinheiro está indo.
+            </p>
+        </p-card>
+    </div>
+    <div class="p-col-12 p-md-4 p-mb-4">
+        <p-card styleClass="p-shadow-2 h-full text-center">
+            <ng-template pTemplate="header">
+                <i class="pi pi-chart-bar p-text-6xl p-mb-3 p-text-success"></i>
+            </ng-template>
+            <ng-template pTemplate="title">
+                Orçamentos Inteligentes
+            </ng-template>
+            <ng-template pTemplate="subtitle">
+                Crie e monitore seus orçamentos.
+            </ng-template>
+            <p>
+                Defina limites para suas categorias e receba alertas para se manter no controle do seu orçamento.
+            </p>
+        </p-card>
+    </div>
+    <div class="p-col-12 p-md-4 p-mb-4">
+        <p-card styleClass="p-shadow-2 h-full text-center">
+            <ng-template pTemplate="header">
+                <i class="pi pi-book p-text-6xl p-mb-3 p-text-warning"></i>
+            </ng-template>
+            <ng-template pTemplate="title">
+                Relatórios Detalhados
+            </ng-template>
+            <ng-template pTemplate="subtitle">
+                Visão clara da sua saúde financeira.
+            </ng-template>
+            <p>
+                Gráficos e relatórios intuitivos para você tomar decisões financeiras mais inteligentes.
+            </p>
+        </p-card>
+    </div>
+</div>
+
+<div class="p-d-flex p-flex-column p-jc-center p-ai-center p-py-6 text-center">
+    <h2 class="p-text-4xl p-mb-3 p-text-bold">Pronto para Transformar Suas Finanças?</h2>
+    <p class="p-text-xl p-mb-4 p-text-secondary">Comece hoje mesmo com o Finario!</p>
+    <div class="p-d-flex p-jc-center p-flex-wrap">
+        <button pButton label="Começar Agora" routerLink="/auth/register" class="p-button-lg p-button-success p-mr-2 p-mb-2"></button>
+        <button pButton label="Já Sou Cliente" routerLink="/auth/login" class="p-button-lg p-button-outlined p-button-secondary p-mb-2"></button>
+    </div>
+</div>
+
