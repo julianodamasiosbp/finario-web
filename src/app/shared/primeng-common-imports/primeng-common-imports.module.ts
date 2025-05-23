@@ -8,11 +8,14 @@ import { InputTextModule } from 'primeng/inputtext';
 import { ToolbarModule } from 'primeng/toolbar';
 import { AvatarModule } from 'primeng/avatar';
 import { RippleModule } from 'primeng/ripple';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
+    RouterOutlet,
+    RouterLink,
     FormsModule,
     ReactiveFormsModule,
     ButtonModule,
@@ -24,6 +27,8 @@ import { RippleModule } from 'primeng/ripple';
   ],
   exports: [
     CommonModule,
+    RouterOutlet,
+    RouterLink,
     FormsModule,
     ReactiveFormsModule,
     ButtonModule,
