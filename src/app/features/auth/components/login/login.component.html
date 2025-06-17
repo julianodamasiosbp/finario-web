@@ -1,1 +1,23 @@
-<p>login works!</p>
+<div class="flex align-items-center justify-content-center min-h-screen">
+  <p-card header="LOGIN" styleClass="p-shadow-3" [style]="{'width': '30rem'}">
+    <div class="mb-2">
+      <p-iftalabel>
+        <input pInputText id="username" [(ngModel)]="username" autocomplete="off" />
+        <label for="username">Username</label>
+      </p-iftalabel>
+    </div>
+    <div>
+      <p-iftalabel>
+        <input pInputText id="password" [(ngModel)]="password" autocomplete="off" />
+        <label for="password">Password</label>
+      </p-iftalabel>
+    </div>
+    <ng-template pTemplate="footer">
+      <div>
+        <button pButton label="Voltar" class="mr-2" icon="pi pi-arrow-left" severity="secondary"
+          styleClass="p-button-success" (click)="backToHome()"></button>
+        <button pButton label="Entrar" icon="pi pi-check" styleClass="p-button-success" (click)="onSubmit()"></button>
+      </div>
+    </ng-template>
+  </p-card>
+</div>
