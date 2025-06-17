@@ -1,0 +1,35 @@
+<svg width="180" height="72" viewBox="0 0 250 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    /* Estilos para o texto "Finario" */
+    .finario-text {
+      font-family: 'Inter', sans-serif; /* Mantendo Inter para um visual moderno */
+      font-weight: 700; /* Negrito */
+      font-size: 40px;
+      fill: #1E3A8A; /* Cor azul escuro da sua paleta */
+    }
+
+    /* Estilos para o retângulo principal do logo (quase quadrado) */
+    .logo-rectangle {
+      fill: #5B8ECF; /* Azul ainda mais claro */
+      stroke: #5B8ECF; /* Borda azul ainda mais claro */
+      stroke-width: 2;
+      rx: 8; /* Cantos arredondados */
+      ry: 8; /* Cantos arredondados */
+    }
+
+    /* Estilos para as barras de progressão */
+    .progress-bar {
+      fill: #E0F0FF; /* Branco puxado para o azul */
+      rx: 1; /* Cantos arredondados para as barras */
+      ry: 1; /* Cantos arredondados para as barras */
+    }
+  </style>
+
+  <rect x="25" y="30" width="46" height="40" class="logo-rectangle"/>
+
+  <rect x="35" y="55" width="6" height="10" class="progress-bar"/>
+  <rect x="45" y="45" width="6" height="20" class="progress-bar"/>
+  <rect x="55" y="35" width="6" height="30" class="progress-bar"/>
+
+  <text x="78" y="65" class="finario-text">Finario</text>
+</svg>

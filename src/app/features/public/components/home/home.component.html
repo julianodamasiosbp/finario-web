@@ -1,1 +1,84 @@
-<p>home works!</p>
+<p-toolbar styleClass="mb-4 surface-card shadow-2">
+    <ng-template pTemplate="start">
+        <img src="finario-logo.svg" alt="Finario Logo">
+    </ng-template>
+    <ng-template pTemplate="end">
+        <button pButton label="Sobre" class="button-text mr-2"></button>
+        <button pButton label="Contato" class="button-text mr-2"></button>
+        <button pButton label="Entrar" routerLink="/auth/login" class="button-text mr-2"></button>
+    </ng-template>
+</p-toolbar>
+
+<div class="grid jc-center ai-center py-6 surface-ground text-center" style="min-height: 200px;">
+    <div class="col-12 md-8 lg-6">
+        <h1 class="text-bold text-5xl mb-3">Assuma o Controle da Sua Vida Financeira</h1>
+        <p class="text-xl mb-4 text-secondary">Finario te ajuda a gerenciar gastos, criar orçamentos e alcançar seus objetivos financeiros de forma simples e intuitiva.</p>
+        <div class="d-flex jc-center flex-wrap">
+            <button pButton label="Começar Agora" routerLink="/auth/register" class="button-sm button-success mr-2 mb-2"></button>
+            <button pButton label="Saiba Mais" class="button-lg button-outlined button-secondary mb-2"></button>
+        </div>
+    </div>
+</div>
+
+<div class="grid jc-center py-6 px-3">
+    <h2 class="col-12 text-center text-4xl mb-5 text-bold">Funcionalidades Poderosas ao Seu Alcance</h2>
+
+    <div class="col-12 md-4 mb-4">
+        <p-card styleClass="shadow-2 h-full text-center">
+            <ng-template pTemplate="header">
+                <i class="pi pi-wallet text-6xl mb-3 text-primary"></i>
+            </ng-template>
+            <ng-template pTemplate="title">
+                Controle de Despesas
+            </ng-template>
+            <ng-template pTemplate="subtitle">
+                Registre e categorize seus gastos.
+            </ng-template>
+            <p>
+                Nunca mais se perca em suas finanças. Categorize cada gasto e saiba para onde seu dinheiro está indo.
+            </p>
+        </p-card>
+    </div>
+    <div class="col-12 md-4 mb-4">
+        <p-card styleClass="shadow-2 h-full text-center">
+            <ng-template pTemplate="header">
+                <i class="pi pi-chart-bar text-6xl mb-3 text-success"></i>
+            </ng-template>
+            <ng-template pTemplate="title">
+                Orçamentos Inteligentes
+            </ng-template>
+            <ng-template pTemplate="subtitle">
+                Crie e monitore seus orçamentos.
+            </ng-template>
+            <p>
+                Defina limites para suas categorias e receba alertas para se manter no controle do seu orçamento.
+            </p>
+        </p-card>
+    </div>
+    <div class="col-12 md-4 mb-4">
+        <p-card styleClass="shadow-2 h-full text-center">
+            <ng-template pTemplate="header">
+                <i class="pi pi-book text-6xl mb-3 text-warning"></i>
+            </ng-template>
+            <ng-template pTemplate="title">
+                Relatórios Detalhados
+            </ng-template>
+            <ng-template pTemplate="subtitle">
+                Visão clara da sua saúde financeira.
+            </ng-template>
+            <p>
+                Gráficos e relatórios intuitivos para você tomar decisões financeiras mais inteligentes.
+            </p>
+        </p-card>
+    </div>
+</div>
+
+<div class="d-flex flex-column jc-center ai-center py-6 text-center">
+    <h2 class="text-4xl mb-3 text-bold">Pronto para Transformar Suas Finanças?</h2>
+    <p class="text-xl mb-4 text-secondary">Comece hoje mesmo com o Finario!</p>
+    <div class="d-flex jc-center flex-wrap">
+        <button pButton label="Começar Agora" routerLink="/auth/register" class="button-lg button-success mr-2 mb-2"></button>
+        <button pButton label="Já Sou Cliente" routerLink="/auth/login" class="button-lg button-outlined button-secondary mb-2"></button>
+    </div>
+</div>
+
