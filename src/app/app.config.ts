@@ -9,6 +9,10 @@ import {
 import { providePrimeNG } from 'primeng/config';
 import Aura from '@primeng/themes/aura';
 import Lara from '@primeng/themes/lara';
+import Material from '@primeng/themes/material';
+import Nora from '@primeng/themes/nora';
+import { FinarioTheme } from '../app/core/themes/finario-theme';
+
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 export const appConfig: ApplicationConfig = {
@@ -19,7 +23,7 @@ export const appConfig: ApplicationConfig = {
     provideAnimationsAsync(),
     providePrimeNG({
       theme: {
-        preset: Lara,
+        preset: FinarioTheme,
       },
     }),
   ],
